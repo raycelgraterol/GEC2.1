@@ -1,0 +1,9 @@
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.deps.json
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.dll
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.pdb
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.csprojAssemblyReference.cache
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.csproj.CoreCompileInputs.cache
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyInfoInputs.cache
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyInfo.cs
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.dll
+C:\Repositorio\GlobalExchangeCoin\GECoin2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.pdb

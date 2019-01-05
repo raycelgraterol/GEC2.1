@@ -1,0 +1,44 @@
+﻿@using NonFactors.Mvc.Grid;
+@using GECApi.Entities;
+@using System.Globalization;
+
+@model IEnumerable<Advertisement>
+
+@{
+    ViewData["Title"] = "Venta Venezuela";
+}
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <i class="fa fa-align-justify"></i> Venta Venezuela
+      </div>
+      <form id="SearchSell" action="SearchSell" method="post" class="form-horizontal">
+        <div class="card-body">
+          <div class="form-group row">
+            <div class="col-md-12">
+              <div class="input-group">
+                <span class="input-group-prepend">
+                  <button type="button" class="btn btn-primary" onclick="sellCountries.showSellValues()">
+                    <i class="fa fa-search"></i> Search
+                  </button>
+                </span>
+                <input type="text" id="sellValue" name="sellValue" class="form-control" placeholder="Valor de venta">
+              </div>
+            </div>
+            <!--/.col-->
+          </div>
+          <!--/.row-->
+          <br />
+          <div id="sellResult">
+            <!-- SIDEBAR-NAV -->
+            <partial name="_sellResult" model="@Model" />
+            <!-- /SIDEBAR-NAV -->
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--/.row-->
+<script src="~/js/App/sellCountries.js"></script>

@@ -1,0 +1,69 @@
+﻿<nav class="sidebar-nav">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="index">
+        <i class="nav-icon icon-speedometer"></i> Dashboard
+        <span class="badge badge-primary">NEW</span>
+      </a>
+    </li>
+    <li class="nav-title">Pricipal</li>
+    <li class="nav-item">
+      <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" asp-route-view="Index">
+        <i class="nav-icon icon-flag"></i> Paises
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About" asp-route-view="About">
+        <i class="nav-icon icon-star"></i> Acerca de
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact" asp-route-view="Contact">
+        <i class="nav-icon icon-bell"></i> Contato
+      </a>
+    </li>
+    <li class="nav-title">Components</li>
+    <li class="nav-item nav-dropdown">
+      <a class="nav-link nav-dropdown-toggle" href="#">
+        <i class="nav-icon icon-check"></i> Remesas
+      </a>
+      <ul class="nav-dropdown-items">
+        <li class="nav-item">
+          <a class="nav-link" asp-area="" asp-controller="ManagementChange" asp-action="Index" asp-route-view="Index">
+            <i class="nav-icon icon-puzzle"></i> Vender Venezuela
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="divider"></li>
+    <li class="nav-title">Extras</li>
+    <li class="nav-item nav-dropdown">
+      <a class="nav-link nav-dropdown-toggle" href="#">
+        <i class="nav-icon icon-star"></i> Paginas
+      </a>
+      <ul class="nav-dropdown-items">
+        <li class="nav-item">
+          <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="login" target="_top">
+            <i class="nav-icon icon-star"></i> Ingresar
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" asp-area="" asp-controller="CoreUI" asp-action="Index" asp-route-view="register" target="_top">
+            <i class="nav-icon icon-star"></i> Registrar
+          </a>
+        </li>        
+      </ul>
+    </li>
+    <li class="nav-item mt-auto">
+      <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+        <i class="nav-icon icon-cloud-download"></i> Download CoreUI
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+        <i class="nav-icon icon-layers"></i> Try CoreUI
+        <strong>PRO</strong>
+      </a>
+    </li>
+  </ul>
+</nav>

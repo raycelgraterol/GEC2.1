@@ -1,0 +1,54 @@
+﻿@using GECApi.Entities;
+@using System.Globalization;
+
+<table class="table table-responsive-sm table-hover mb-0">
+  <thead class="thead-light">
+    <tr>
+      <th class="text-center"><i class="icon-people"></i></th>
+      <th class="text-center">Descripcion Pago</th>
+      <th class="text-center">Precio de Venta</th>
+      <th class="text-center">Rango Precios</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td class="text-center">
+          <div>@item.profile.name.ToUpper()</div>
+          <div class="small text-muted">
+            <span>@item.profile.trade_count</span>   <span class="badge @(item.profile.feedback_score == "100" ? "badge-success" : "badge-warning")">@item.profile.feedback_score</span>
+          </div>
+        </td>
+        <td class="text-center">
+          <a target="_blank" href="@item.public_view" class="text-dark">@item.bank_name</a>
+        </td>
+        <td class="text-center">@item.temp_price.ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))</td>
+        <td class="text-center">
+          <div id="minAmount" class="text-primary">@item.min_amount.ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))</div>
+          <div id="maxAmount" class="text-primary">@item.max_amount.ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))</div>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+<ul class="pagination">
+  <li class="page-item">
+    <a class="page-link" href="#">Prev</a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="#">1</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">2</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">3</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">4</a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+  </li>
+</ul>
