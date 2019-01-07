@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/.vs/slnx.sqlite-journal
+/.vs/slnx.sqlite
+/.vs/GECoin2.1/v15
