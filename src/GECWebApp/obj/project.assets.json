@@ -12344,11 +12344,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorio\\GlobalExchangeCoin\\GECoin2.1\\src\\GECWebApp\\GECWebApp.csproj",
+      "projectUniqueName": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\src\\GECWebApp\\GECWebApp.csproj",
       "projectName": "GECWebApp",
-      "projectPath": "C:\\Repositorio\\GlobalExchangeCoin\\GECoin2.1\\src\\GECWebApp\\GECWebApp.csproj",
+      "projectPath": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\src\\GECWebApp\\GECWebApp.csproj",
       "packagesPath": "C:\\Users\\craycel\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorio\\GlobalExchangeCoin\\GECoin2.1\\src\\GECWebApp\\obj\\",
+      "outputPath": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\src\\GECWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12367,8 +12367,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Repositorio\\GlobalExchangeCoin\\GECoin2.1\\GECApi\\GECApi.csproj": {
-              "projectPath": "C:\\Repositorio\\GlobalExchangeCoin\\GECoin2.1\\GECApi\\GECApi.csproj"
+            "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\GECApi\\GECApi.csproj": {
+              "projectPath": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\GECApi\\GECApi.csproj"
             }
           }
         }
