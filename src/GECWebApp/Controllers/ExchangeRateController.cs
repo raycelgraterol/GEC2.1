@@ -32,7 +32,7 @@ namespace GECWebApp.Controllers
         {
             try
             {
-                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "transfers-with-specific-bank");
+                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "",2);
 
                 return Json(new { success = true, sellVe = sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")), sellVeHigh = sellVE[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")) });
             }
@@ -57,7 +57,7 @@ namespace GECWebApp.Controllers
             }
             else
             {
-                var result = await SellAdServices.SellAdsAboutAmount("VE", "transfers-with-specific-bank");
+                var result = await SellAdServices.SellAdsAboutAmount("VE", "", 2);
                 sellVe = result[0];
             }
 

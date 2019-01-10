@@ -728,11 +728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\GECApi\\GECApi.csproj",
+      "projectUniqueName": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\GECApi.csproj",
       "projectName": "GECApi",
-      "projectPath": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\GECApi\\GECApi.csproj",
+      "projectPath": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\GECApi.csproj",
       "packagesPath": "C:\\Users\\craycel\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorio\\GitRespository\\GEC\\raycelgraterol\\GEC2.1\\GECApi\\obj\\",
+      "outputPath": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

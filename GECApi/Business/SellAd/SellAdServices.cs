@@ -60,14 +60,16 @@ namespace GECApi.Business.SellAd
             }
         }
 
-        public async static Task<Decimal[]> SellAdsAboutAmount(string countryCode, string paymentMethod)
+        public async static Task<Decimal[]> SellAdsAboutAmount(string countryCode, string paymentMethod, int page, string countryName = "venezuela")
         {
             try
             {
                 HttpClientServices apiRequest = new HttpClientServices();
 
-                var result = JObject.Parse(await apiRequest.GetUnAuthorized("sell-bitcoins-online/" + countryCode + "/"
-                                                            + "/" + paymentMethod + "/.json"));
+                string secondParameter = string.IsNullOrEmpty(paymentMethod) ? countryName : paymentMethod;
+
+                var result = JObject.Parse(await apiRequest.GetUnAuthorized("sell-bitcoins-online/" + countryCode +
+                                                            "/" + secondParameter + "/.json?page=" + page.ToString()));
 
 
                 var convertResult = result.SelectToken("data").SelectToken("ad_list");

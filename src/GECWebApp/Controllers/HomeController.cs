@@ -24,7 +24,7 @@ namespace GECWebApp.Controllers
             }
             else
             {
-                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "transfers-with-specific-bank");
+                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "", 2);
                 ViewBag.sellVe = sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
                 ViewBag.sellVeHigh = sellVE[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
 
