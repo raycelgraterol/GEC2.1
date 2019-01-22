@@ -1,0 +1,214 @@
+﻿@using NonFactors.Mvc.Grid;
+@using GECApi.Entities;
+@using System.Globalization;
+@{
+  ViewData["Title"] = "Remesas";
+}
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+<h2>Remesas</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 form-group mb-0"><input type="text" placeholder="Seleccionar Pais" id="pais" name="pais" class="form-control" /></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <!-- Primera fila -->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="col-form-label">Cantidad BTC</label>
+                <input type="number" min="1" max="8" id="cantidadBtc" placeholder="044303" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="col-form-label">Monto Remesas</label>
+                <input type="number" min="1" id="montoRemesas" placeholder="044303" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="col-form-label">Tasas Remesas</label>
+                <input type="number" min="1" id="tasasRemesas" placeholder="044303" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label class="col-form-label">Monto Total</label>
+                <input type="number" min="1" id="montoTotal" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+          </div>
+          <!-- Fin de la Primera fila -->
+          <!-- Segunda fila -->
+          <div class="row">
+            <div class="col-md-7">
+              <div class="form-group">
+                <label class="form-label">Tasas Ventas BTC</label>
+                <input type="number" min="1" id="tasasVentasBtc" placeholder="044303" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <!-- Fin de la Primera fila -->
+          <!-- Segunda fila -->
+          <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="form-text text-center"> Nuestro Contacto</label>
+                <input type="checkbox" id="contacto" class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+          </div>
+
+          <!-- Fin de la Segunda fila -->
+          <!-- Tercera fila -->
+
+          <div class="row" id="estadoContacto">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="col-form-label">Ganancia Contacto</label>
+                <input type="number" min="1" id="gananciaC" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="col-form-label">Ganancia Enlace</label>
+                <input type="number" min="1" id="gananciaE" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="col-form-label">Ganancia GEC</label>
+                <input type="number" min="1" id="gananciaGEC" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fin de la Tercera fila -->
+          <!-- Cuarta fila -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="col-form-label">Monto Entrega</label>
+                <input type="number" min="1" id="montoEntrega" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="col-form-label">Ganancia</label>
+                <input type="number" min="1" id="gananciaNeta" placeholder="99999$" disabled class="form-control" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <input type="button" class="btn btn-lg btn-danger float-right" value="Cancelar" id="botonCancel" onclick="Cancelremittances()" />
+        <input type="button" class="btn btn-lg btn-success float-right" value="Guardar" id="botonGuardar" onclick="saveRemittances()" />
+      </div>
+      <!--Mensaje de Error y fin del Card-->
+      <div class="row">
+        <divv class="col-md-12">
+          <div id="mensajeError"></div>
+        </divv>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Tabla de datos de Remesas-->
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-5">
+      <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        filtros
+      </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <div class="form-group">
+            <label for="eleccionFiltro" class="form-label">Fecha</label>
+            <input type="radio" name="eleccionFiltro" id="filtrofecha" class="radio mr-lg-5" checked />
+
+            <label for="eleccionFiltro" class="form-label">Pais</label>
+            <input type="radio" name="eleccionFiltro" id="filtroPais" class="radio mr-lg-5" />
+
+            <label for="eleccionFiltro" class="form-label">Monto</label>
+            <input type="radio" name="eleccionFiltro" id="filtroMonto" class="radio" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="form-group">
+        <input type="search" name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="Search.." />
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="form-group">
+        <button type="button" name="botonBuscar" id="botonBuscar" class="btn btn-primary" onclick="look()"><i class="cui-magnifying-glass" aria-hidden="true"></i> Search</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Ganancia Contacto</th>
+            <th scope="col">Ganancia Enlace</th>
+            <th scope="col">Ganancia GEC</th>
+            <th scope="col">Monto Entrega</th>
+            <th scope="col">Ganancia</th>
+            <th scope="col">Monto Total</th>
+          </tr>
+        </thead>
+        <tbody id="datosTabla"></tbody>
+      </table>
+    </div>
+
+    <div class="col-md-12">
+      <div id="errorFiltro"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+@section Scripts {
+
+  <script src="~/js/App/consigment/jqy.js"></script>
+  <script src="~/js/App/consigment/ppy.js" ></script>
+  <script src="~/js/App/consigment/Bs4.js" ></script>
+
+  <script src="~/js/App/consigment/crudFirebase.js"></script>
+  <script src="~/js/App/consigment/consignmentFirebase.js"></script>
+
+  <script src="~/js/App/consigment/startFirebase.js"></script>
+}
+
