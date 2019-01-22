@@ -40,9 +40,9 @@ function getTable(querySnapshot, remittancesTable, i) {
                         <tr>
                           <th>${doc.data().fecha}</th>
                           <td>${doc.data().pais}</td>
-                          <td>${doc.data().gananciaCBD}</td>
-                          <td>${doc.data().gananciaEDB}</td>
                           <td>${doc.data().gananciaGECDB}</td>
+                          <td>${doc.data().gananciaEDB}</td>
+                          <td>${doc.data().gananciaCBD}</td>
                           <td>${doc.data().montoEntregaDB}</td>
                           <td>${doc.data().gananciaNetaDB}</td>
                           <td>${doc.data().montoTotalDB}</td>

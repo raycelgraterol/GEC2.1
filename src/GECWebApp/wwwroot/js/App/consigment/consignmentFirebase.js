@@ -48,34 +48,34 @@ function saveRemittances() {
         var fechaActual = f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear();
 
 
-        var fullTotaly = (rodeBtc * rateSoldsBtc);
-        var entryAmount = (remittancesRates * rodeRemittances);
+        var fullTotaly = (rodeBtc * rateSoldsBtc).toFixed(2);
+        var entryAmount = (remittancesRates * rodeRemittances).toFixed(2);
 
-        var profitcompany = (fullTotaly - entryAmount); // ganancia para despues dependiente del contacto
+        var profitcompany = (fullTotaly - entryAmount).toFixed(2); // ganancia para despues dependiente del contacto
 
         if (contactCheck) {
 
-            profitC = (profitcompany * 0.2);
-            profitE = (profitcompany * 0.3);
-            profitGEC = (profitcompany * 0.5);
+            profitC = (profitcompany * 0.2).toFixed(2);
+            profitE = (profitcompany * 0.3).toFixed(2);
+            profitGEC = (profitcompany * 0.5).toFixed(2);
 
 
 
         } else {
 
             profitC = 0;
-            profitE = (profitcompany * 0.4);
-            profitGEC = (profitcompany * 0.6);
+            profitE = (profitcompany * 0.4).toFixed(2);
+            profitGEC = (profitcompany * 0.6).toFixed(2);
 
         }
-        var gananciaNeta = (rodeBtc + rodeRemittances + rateSoldsBtc + remittancesRates);
+        //var gananciaNeta = (rodeBtc + rodeRemittances + rateSoldsBtc + remittancesRates);
 
         document.getElementById("montoTotal").value = fullTotaly;
         document.getElementById("gananciaC").value = profitC;
         document.getElementById("gananciaE").value = profitE;
         document.getElementById("gananciaGEC").value = profitGEC;
         document.getElementById("montoEntrega").value = entryAmount;
-        document.getElementById("gananciaNeta").value = gananciaNeta;
+        document.getElementById("gananciaNeta").value = profitcompany;
 
 
         if (idremittances != "") {
@@ -84,7 +84,7 @@ function saveRemittances() {
 
         }
         else {
-            addFirebase(db, colection, fullTotaly, contactCheck, profitC, profitE, profitGEC, entryAmount, gananciaNeta, fechaActual, myContry);
+            addFirebase(db, colection, fullTotaly, contactCheck, profitC, profitE, profitGEC, entryAmount, profitcompany, fechaActual, myContry);
         }
 
 
@@ -166,7 +166,7 @@ function look() {
 
     var myDateF = document.getElementById("filtrofecha").checked;
     var contryF = document.getElementById("filtroPais").checked;
-    var amountF = document.getElementById("filtroMonto").checked;
+    var amountF = "";
     var filter = "";
 
     var search = document.getElementById("buscaRemesa").value;
@@ -189,7 +189,7 @@ function look() {
 
     if (filter != "") {
 
-        db.collection(colection).where(filter, "==", search).limit(5)
+        db.collection(colection).where(filter, "==", search.toUpperCase()).limit(5)
             .get()
             .then(function (querySnapshot) {
                 remittancesTable.innerHTML = "";
