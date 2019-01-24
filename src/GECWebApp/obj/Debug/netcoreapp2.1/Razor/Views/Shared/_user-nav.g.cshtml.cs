@@ -74,7 +74,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n\r\n<li class=\"nav-item dropdown\">\r\n  <a class=\"nav-link\" data-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n    ");
             EndContext();
             BeginContext(291, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "129ef0137ff64e2689454666d3d98722", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d8deda5b99ca4de584df6af4b8192ee3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -120,7 +120,7 @@ using Microsoft.AspNetCore.Identity;
     ");
             EndContext();
             BeginContext(1207, 145, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8ce7f3cf5e842bd922dbfc1780106a6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eae9e4466662425e8079d5351ec94b91", async() => {
                 BeginContext(1300, 48, true);
                 WriteLiteral("\r\n      <i class=\"fa fa-user\"></i> Profile\r\n    ");
                 EndContext();
@@ -164,7 +164,7 @@ using Microsoft.AspNetCore.Identity;
     ");
             EndContext();
             BeginContext(1878, 400, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "151a69f1b1d345e291d613f88b6de796", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a5ff6a0b07143539483d5886a9e1c44", async() => {
                 BeginContext(2020, 251, true);
                 WriteLiteral("\r\n      <script>\r\n        function logout() {\r\n          $(\'#logoutForm\').submit();\r\n        }\r\n      </script>\r\n      <a class=\"dropdown-item\" href=\"javascript: void(0)\" onclick=\"logout()\">\r\n        <i class=\"fa fa-lock\"></i> Logout\r\n      </a>\r\n    ");
                 EndContext();

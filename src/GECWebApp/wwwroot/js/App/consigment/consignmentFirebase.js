@@ -122,7 +122,7 @@ function getRemittances() {
 
     var i = 0;
 
-    db.collection(colection).limit(5).onSnapshot((querySnapshot) => {
+    db.collection(colection).orderBy("fecha", "desc").limit(8).onSnapshot((querySnapshot) => {
         remittancesTable.innerHTML = "";
 
         getTable(querySnapshot, remittancesTable, i);
@@ -189,7 +189,7 @@ function look() {
 
     if (filter != "") {
 
-        db.collection(colection).where(filter, "==", search.toUpperCase()).limit(5)
+        db.collection(colection).where(filter, "==", search.toUpperCase()).limit(8)
             .get()
             .then(function (querySnapshot) {
                 remittancesTable.innerHTML = "";
@@ -207,6 +207,18 @@ function look() {
             .catch(function (error) {
                 console.log("Error getting documents: ", error);
             });
+    }
+
+}
+
+function deleteRemittances(id) {
+
+    var eliminar = confirm("¿Seguro que desea ELIMINAR la Remesa?");
+
+    if (eliminar) {
+        deleteFirebase(db, colection, id);
+    } else {
+
     }
 
 }

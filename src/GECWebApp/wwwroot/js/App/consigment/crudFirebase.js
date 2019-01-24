@@ -48,8 +48,13 @@ function getTable(querySnapshot, remittancesTable, i) {
                           <td>${doc.data().montoTotalDB}</td>
                           <td>
                               <button type="button" class="btn btn-success" id="actualizarRemesa" name="actualizarRemesa" onclick="saveDataId('${doc.id}', ${i})">
-                                <i class="cui-pencil icons font-2xl d-block mt-4"></i>
+                                <i class="cui-pencil icons font-2xl d-block"></i>
                               </button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger" onclick="deleteRemittances('${doc.id}')">
+                              <i class="fa fa-trash font-2xl d-block"></i>
+                            </button>
                           </td>
                         </tr>
                 
@@ -91,4 +96,13 @@ function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGE
         .catch(function (error) {
             console.error("Error adding document: ", error);
         });
+}
+
+function deleteFirebase(db, colection,id) {
+    db.collection(colection).doc(id).delete().then(function () {
+        console.log("Document successfully deleted!");
+        alert("Se a Eliminado con Exito la Remesa.");
+    }).catch(function (error) {
+        console.error("Error removing document: ", error);
+    });
 }
