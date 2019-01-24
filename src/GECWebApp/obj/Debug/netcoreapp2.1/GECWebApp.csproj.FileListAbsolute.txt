@@ -359,3 +359,4 @@ C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.dll
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.pdb
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Consignment\Index.g.cshtml.cs
+C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Consignment\Index.g.cshtml.cs
