@@ -1,6 +1,6 @@
 ﻿
 // funcion para updatear en firebase
-function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate) {
+function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry) {
 
     db.collection(colection).doc(id).set({
 
@@ -11,7 +11,8 @@ function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profi
         gananciaGECDB: profitGEC,
         montoEntregaDB: amountE,
         gananciaNetaDB: profitN,
-        fecha: myDate
+        fecha: myDate,
+        pais: myContry
 
     })
         .then(function () {
@@ -67,6 +68,7 @@ function getTable(querySnapshot, remittancesTable, i) {
         dataremittances5[i] = doc.data().montoEntregaDB;
         dataremittances6[i] = doc.data().gananciaNetaDB;
         dataremittances7[i] = doc.data().montoTotalDB;
+        dataremittances8[i] = doc.data().pais;
         i++;
 
     });

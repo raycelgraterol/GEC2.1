@@ -10,6 +10,7 @@ var dataremittances4 = new Array();
 var dataremittances5 = new Array();
 var dataremittances6 = new Array();
 var dataremittances7 = new Array();
+var dataremittances8 = new Array();
 
 var colection = "Remesas";
 var idremittances = "";
@@ -144,8 +145,9 @@ function updateRemittances(id) {
     var entryAmountDB = document.getElementById("montoEntrega").value;
     var priceNtDB = document.getElementById("gananciaNeta").value;
     var myDate = nowDay;
+    var myContry = document.getElementById("pais").value;
 
-    firebaseUpdate(colection, id, totalyPriceDB, contactCheckBD, profitCBD, profitEDB, profitGECDB, entryAmountDB, priceNtDB, myDate);
+    firebaseUpdate(colection, id, totalyPriceDB, contactCheckBD, profitCBD, profitEDB, profitGECDB, entryAmountDB, priceNtDB, myDate, myContry);
     console.log(id);
 }
 
@@ -158,6 +160,7 @@ function saveDataId(id, n) {
     document.getElementById("montoEntrega").value = dataremittances5[n];
     document.getElementById("gananciaNeta").value = dataremittances6[n];
     document.getElementById("montoTotal").value = dataremittances7[n];
+    document.getElementById("pais").value = dataremittances8[n];
 
     idremittances = id;
 }
