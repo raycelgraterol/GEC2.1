@@ -41,20 +41,20 @@ function getTable(querySnapshot, remittancesTable, i) {
                         <tr>
                           <th>${doc.data().fecha}</th>
                           <td>${doc.data().pais}</td>
-                          <td>${doc.data().gananciaGECDB}</td>
-                          <td>${doc.data().gananciaEDB}</td>
-                          <td>${doc.data().gananciaCBD}</td>
-                          <td>${doc.data().montoEntregaDB}</td>
-                          <td>${doc.data().gananciaNetaDB}</td>
-                          <td>${doc.data().montoTotalDB}</td>
+                          <td>${doc.data().gananciaGECDB}Bs</td>
+                          <td>${doc.data().gananciaEDB}Bs</td>
+                          <td>${doc.data().gananciaCBD}Bs</td>
+                          <td>${doc.data().montoEntregaDB}Bs</td>
+                          <td>${doc.data().gananciaNetaDB}Bs</td>
+                          <td>${doc.data().montoTotalDB}Bs</td>
                           <td>
                               <button type="button" class="btn btn-success" id="actualizarRemesa" name="actualizarRemesa" onclick="saveDataId('${doc.id}', ${i})">
-                                <i class="cui-pencil icons font-2xl d-block"></i>
+                                <i class="cui-pencil icons"></i>
                               </button>
                           </td>
                           <td>
                             <button type="button" class="btn btn-danger" onclick="deleteRemittances('${doc.id}')">
-                              <i class="fa fa-trash font-2xl d-block"></i>
+                              <i class="fa fa-trash"></i>
                             </button>
                           </td>
                         </tr>
