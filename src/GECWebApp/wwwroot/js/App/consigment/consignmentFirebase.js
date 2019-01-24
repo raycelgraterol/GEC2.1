@@ -16,7 +16,6 @@ var colection = "Remesas";
 var idremittances = "";
 
 
-
 function validate(amountBtc, remittancesAmount, remittanceRates, ratesSoldsBtc) {
 
     if (amountBtc == "" || remittancesAmount == "" || remittanceRates == "" || ratesSoldsBtc == "") {
