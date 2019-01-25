@@ -19,7 +19,6 @@ C:\Repositorio\GitRespository\GEC\raycelgraterol\GEC2.1\GECApi\obj\Debug\netcore
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.deps.json
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.dll
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Debug\netcoreapp2.1\GECApi.pdb
-C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.csprojAssemblyReference.cache
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.csproj.CoreCompileInputs.cache
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyInfoInputs.cache
 C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyInfo.cs
@@ -34,3 +33,4 @@ C:\repositorio\GitGlobal\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyIn
 C:\repositorio\GitGlobal\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.AssemblyInfo.cs
 C:\repositorio\GitGlobal\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.dll
 C:\repositorio\GitGlobal\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.pdb
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Debug\netcoreapp2.1\GECApi.csprojAssemblyReference.cache
