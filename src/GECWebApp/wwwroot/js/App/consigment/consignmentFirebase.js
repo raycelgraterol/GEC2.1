@@ -62,7 +62,80 @@ function myselectfilterDate(){
                                     <i class="fa fa-search"></i> Search
                                   </button>
                                 </span>
-                                <input type="search" name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="18/1/2019" />
+                                <input type="text" disabled value="Dia" class="form-control"/>
+                                <select class="form-control" name="dia" id="dia">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                                <input type="text" disabled value="Mes" class="form-control"/>
+                                <select class="form-control" name="mes" id="mes">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="text" disabled value="Año" class="form-control"/>
+                                <select class="form-control" name="year" id="year">
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                    <option>2011</option>
+                                    <option>2011</option>
+                                    <option>2010</option>
+                                    <option>209</option>
+                                    <option>2008</option>
+                                    <option>2007</option>
+                                    <option>2006</option>
+                                    <option>2005</option>
+                                    <option>2004</option>
+                                    <option>2003</option>
+                                    <option>2002</option>
+                                    <option>2001</option>
+                                    <option>2000</option>
+                                </select>
+                                <input type="text" hidden  name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="18/1/2019" />
 
                             `;
 
@@ -224,15 +297,29 @@ function look() {
 
     var myDateF = document.getElementById("filtrofecha").checked;
     var contryF = document.getElementById("filtroPais").checked;
-    var amountF = "";
+    var search = "";
+
+
     var filter = "";
 
-    var search = document.getElementById("buscaRemesa").value;
+    if (myDateF) {
+
+        var dia = document.getElementById("dia").value;
+        var mes = document.getElementById("mes").value;
+        var year = document.getElementById("year").value;
+
+        var fullDate = dia + "/" + mes + "/" + year;
+        search = fullDate;
+
+    } else {
+        search = document.getElementById("buscaRemesa").value;
+    }
+
+    
     var remittancesTable = document.getElementById("datosTabla");
     var i = 0;
 
     var errFilter = document.getElementById("errorFiltro");
-    var existErr = null;
 
     if (myDateF) {
         filter = "fecha";
