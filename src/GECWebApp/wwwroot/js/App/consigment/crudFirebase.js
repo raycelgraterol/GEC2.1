@@ -19,6 +19,7 @@ function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profi
             console.log("Document successfully written!");
             var msnDiv = document.getElementById("mensajeError");
             msnDiv.innerHTML = `<div class="alert alert-success">Se a Actualizado con EXITO la remesa.</div>`;
+            setTimeout(function () { msnDiv.innerHTML = `<div class=""></div>`; }, 3000);
         })
         .catch(function (error) {
             console.error("Error writing document: ", error);
@@ -93,7 +94,12 @@ function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGE
     }).then(function (docRef) {
         console.log("Document written with ID: ", docRef.id);
         var msnDiv = document.getElementById("mensajeError");
-        msnDiv.innerHTML = `<div class="alert alert-success">Se a Guardado con EXITO la remesa.</div>`
+
+        
+        msnDiv.innerHTML = `<div class="alert alert-success">Se a Guardado con EXITO la remesa.</div>`;
+
+
+        setTimeout(function () { msnDiv.innerHTML = `<div class=""></div>`; }, 2000);
     })
         .catch(function (error) {
             console.error("Error adding document: ", error);
@@ -103,7 +109,7 @@ function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGE
 function deleteFirebase(db, colection,id) {
     db.collection(colection).doc(id).delete().then(function () {
         console.log("Document successfully deleted!");
-        alert("Se a Eliminado con Exito la Remesa.");
+
     }).catch(function (error) {
         console.error("Error removing document: ", error);
     });
