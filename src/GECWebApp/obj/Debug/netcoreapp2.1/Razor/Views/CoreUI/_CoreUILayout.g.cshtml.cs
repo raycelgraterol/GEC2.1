@@ -83,7 +83,7 @@ Write(RenderSection("Styles", required: false));
                 WriteLiteral("\r\n  <ol class=\"breadcrumb\">\r\n\r\n    <!-- BREADCRUMB-ITEMS -->\r\n    ");
                 EndContext();
                 BeginContext(226, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "39d604d142b14c8493c1876704043ccb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "098c9f23b7f7431d8f6ad9c818f0ad44", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -102,7 +102,7 @@ Write(RenderSection("Styles", required: false));
                 WriteLiteral("\r\n    <!-- /BREADCRUMB-ITEMS -->\r\n\r\n    <!-- BREADCRUMB-MENU -->\r\n    ");
                 EndContext();
                 BeginContext(332, 35, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f573b6445c224424bc89ea9283f9668e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "294c1594560a4b1d82c2e305b1e86cde", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

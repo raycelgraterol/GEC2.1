@@ -16,6 +16,61 @@ var colection = "Remesas";
 var idremittances = "";
 
 
+function myselectfilterContry() {
+
+    var contryF2 = document.getElementById("filtroPais").checked;
+
+    var containerLook = document.getElementById("contenedorBusqueda");
+
+    if (contryF2) {
+
+        containerLook.innerHTML = `
+                                <span class="input-group-prepend">
+                                  <button type="button" name="botonBuscar" id="botonBuscar" class="btn btn-primary" onclick="look()">
+                                    <i class="fa fa-search"></i> Search
+                                  </button>
+                                </span>
+                                <select class="form-control" name="buscaRemesa" id="buscaRemesa">
+                                    <option>COLOMBIA</option>
+                                    <option>CHILE</option>
+                                    <option>ECUADOR</option>
+                                    <option>PANAMA</option>
+                                    <option>PERU</option>
+                                    <option>R. DOMINICANA</option>
+                                    <option>MEXICO</option>
+                                    <option>ARGENTINA</option>
+                                    <option>ESPAÑA</option>
+                                </select>
+
+                            `;
+
+    }
+    
+}
+
+function myselectfilterDate(){
+
+    var myDateF2 = document.getElementById("filtrofecha").checked;
+
+    var containerLook = document.getElementById("contenedorBusqueda");
+
+    if (myDateF2) {
+
+        containerLook.innerHTML = `
+                                <span class="input-group-prepend">
+                                  <button type="button" name="botonBuscar" id="botonBuscar" class="btn btn-primary" onclick="look()">
+                                    <i class="fa fa-search"></i> Search
+                                  </button>
+                                </span>
+                                <input type="search" name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="18/1/2019" />
+
+                            `;
+
+    }
+
+}
+
+
 function validate(amountBtc, remittancesAmount, remittanceRates, ratesSoldsBtc) {
 
     if (amountBtc == "" || remittancesAmount == "" || remittanceRates == "" || ratesSoldsBtc == "") {
@@ -111,6 +166,7 @@ function Cancelremittances() {
     document.getElementById("montoEntrega").value = "";
     document.getElementById("gananciaNeta").value = "";
 
+    idremittances = "";
     msnDiv.innerHTML = "";
 
 }
@@ -200,6 +256,8 @@ function look() {
 
                 if (getTable(querySnapshot, remittancesTable, i) == null) {
                     errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
+                    setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
+
                 }
                 else {
                     errFilter.innerHTML = `<div id="errorFiltro"></div>`;
