@@ -135,6 +135,40 @@ function myselectfilterDate(){
                                     <option>2001</option>
                                     <option>2000</option>
                                 </select>
+                                <input type="text" disabled value="Hasta" class="form-control" />
+                                <select class="form-control" name="dia" id="otroDia">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
                                 <input type="text" hidden  name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="18/1/2019" />
 
                             `;
@@ -239,6 +273,7 @@ function Cancelremittances() {
     document.getElementById("montoEntrega").value = "";
     document.getElementById("gananciaNeta").value = "";
 
+    jk = 0;
     idremittances = "";
     msnDiv.innerHTML = "";
 
@@ -297,8 +332,9 @@ function look() {
 
     var myDateF = document.getElementById("filtrofecha").checked;
     var contryF = document.getElementById("filtroPais").checked;
+    var countOfDate = "";
     var search = "";
-
+    numberDoc = 0;
 
     var filter = "";
 
@@ -307,9 +343,12 @@ function look() {
         var dia = document.getElementById("dia").value;
         var mes = document.getElementById("mes").value;
         var year = document.getElementById("year").value;
+        var otroDia = document.getElementById("otroDia").value;
 
-        var fullDate = dia + "/" + mes + "/" + year;
-        search = fullDate;
+        var vueltasDias = otroDia - dia;
+        p = 0;
+        jk = 0;
+
 
     } else {
         search = document.getElementById("buscaRemesa").value;
@@ -317,7 +356,7 @@ function look() {
 
     
     var remittancesTable = document.getElementById("datosTabla");
-    var i = 0;
+
 
     var errFilter = document.getElementById("errorFiltro");
 
@@ -334,26 +373,64 @@ function look() {
 
     if (filter != "") {
 
-        db.collection(colection).where(filter, "==", search.toUpperCase()).limit(8)
-            .get()
-            .then(function (querySnapshot) {
+        if (filter == "fecha") {
+
+            for (var i = 0; i < vueltasDias+1; i++) {
+
+                dia = parseInt(dia);
+                diaTotal = dia + i;
+                var fullDate = diaTotal + "/" + mes + "/" + year;
+
                 remittancesTable.innerHTML = "";
 
+                db.collection(colection).where(filter, "==", fullDate).limit(8)
+                    .get()
+                    .then(function (querySnapshot) {
+
+                        if (getTable(querySnapshot, remittancesTable, jk) == (vueltasDias + 1)) {
+
+                            if (numberDoc == 0) {
+
+                                errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
+                                setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
+
+                            }
+
+                        }
+                        else {
+                            errFilter.innerHTML = `<div id="errorFiltro"></div>`;
+                        }
+
+                    })
+                    .catch(function (error) {
+                        console.log("Error getting documents: ", error);
+                    });
+            }
+
+        } else {
+
+            db.collection(colection).where(filter, "==", search.toUpperCase()).limit(8)
+                .get()
+                .then(function (querySnapshot) {
+                    remittancesTable.innerHTML = "";
 
 
-                if (getTable(querySnapshot, remittancesTable, i) == null) {
-                    errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
-                    setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
 
-                }
-                else {
-                    errFilter.innerHTML = `<div id="errorFiltro"></div>`;
-                }
+                    if (getTable(querySnapshot, remittancesTable, i) == 0) {
+                        errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
+                        setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
 
-            })
-            .catch(function (error) {
-                console.log("Error getting documents: ", error);
-            });
+                    }
+                    else {
+                        errFilter.innerHTML = `<div id="errorFiltro"></div>`;
+                    }
+
+                })
+                .catch(function (error) {
+                    console.log("Error getting documents: ", error);
+                });
+
+        }
     }
 
 }

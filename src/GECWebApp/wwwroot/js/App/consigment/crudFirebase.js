@@ -1,4 +1,9 @@
 ﻿
+//variables globales
+var jk = 0;
+var numberDoc = 0;
+var p = -1;
+
 // funcion para updatear en firebase
 function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry) {
 
@@ -32,13 +37,17 @@ function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profi
 function getTable(querySnapshot, remittancesTable, i) {
 
     var existDoc = null;
+    p++;
 
     querySnapshot.forEach(function (doc) {
         // doc.data() is never undefined for query doc snapshots
-        console.log(doc.id, " => ", doc.data());
-        existDoc = doc.id;
+        if (doc.exists) {
 
-        remittancesTable.innerHTML += `
+            console.log(doc.id, " => ", doc.data());
+            existDoc = doc.id;
+            numberDoc++;
+
+            remittancesTable.innerHTML += `
                         <tr>
                           <th>${doc.data().fecha}</th>
                           <td>${doc.data().pais}</td>
@@ -62,19 +71,28 @@ function getTable(querySnapshot, remittancesTable, i) {
                 
                     `;
 
-        dataremittances1[i] = doc.data().contactoCheckBD;
-        dataremittances2[i] = doc.data().gananciaCBD;
-        dataremittances3[i] = doc.data().gananciaEDB;
-        dataremittances4[i] = doc.data().gananciaGECDB;
-        dataremittances5[i] = doc.data().montoEntregaDB;
-        dataremittances6[i] = doc.data().gananciaNetaDB;
-        dataremittances7[i] = doc.data().montoTotalDB;
-        dataremittances8[i] = doc.data().pais;
-        i++;
+            dataremittances1[i] = doc.data().contactoCheckBD;
+            dataremittances2[i] = doc.data().gananciaCBD;
+            dataremittances3[i] = doc.data().gananciaEDB;
+            dataremittances4[i] = doc.data().gananciaGECDB;
+            dataremittances5[i] = doc.data().montoEntregaDB;
+            dataremittances6[i] = doc.data().gananciaNetaDB;
+            dataremittances7[i] = doc.data().montoTotalDB;
+            dataremittances8[i] = doc.data().pais;
+            i++;
+
+            jk = i;
+
+        }
 
     });
 
-    return existDoc;
+    return p;
+    
+
+        
+
+    
 }
 
 function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry) {
