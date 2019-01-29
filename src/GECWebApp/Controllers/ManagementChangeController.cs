@@ -26,5 +26,12 @@ namespace GECWebApp.Controllers
 
             return PartialView("_sellResult", model);
         }
+
+        public async Task<ViewResult> TraidingView()
+        {
+            var model = await SellAdServices.SellAdsList("VE", "transfers-with-specific-bank", "VES", null);
+
+            return View();
+        }
     }
 }
