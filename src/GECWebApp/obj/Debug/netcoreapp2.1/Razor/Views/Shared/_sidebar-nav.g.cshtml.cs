@@ -94,7 +94,7 @@ using GECWebApp.Models;
             WriteLiteral("<nav class=\"sidebar-nav\">\r\n  <ul class=\"nav\">\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(80, 225, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0322bbadd6c642ed82d80215f0bc10ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "772fdd41d982487984db7c3172c71407", async() => {
                 BeginContext(178, 123, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-speedometer\"></i> Dashboard\r\n        <span class=\"badge badge-primary\">NEW</span>\r\n      ");
                 EndContext();
@@ -127,7 +127,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-title\">Theme</li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(389, 162, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "994e70bd1ba3429da1e8b04ff20ad2f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53fcaa756d524291a06987ee71bb5b7d", async() => {
                 BeginContext(488, 59, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-drop\"></i> Colors\r\n      ");
                 EndContext();
@@ -160,7 +160,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(597, 172, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9c5459ba61545c9bb1f6caf631cbb97", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1258e3b6e119456094de55f6f5280761", async() => {
                 BeginContext(700, 65, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-pencil\"></i> Typography\r\n      ");
                 EndContext();
@@ -202,7 +202,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(1065, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca4a00d50a8447d59b2490c18cb864f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4239cef26c8c4ce58417fa083a395e23", async() => {
                 BeginContext(1173, 73, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Breadcrumb\r\n          ");
                 EndContext();
@@ -235,7 +235,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(1308, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f018dff6cc646caab9763385439ece2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5eb8e31127d433c8b695c3cf187213a", async() => {
                 BeginContext(1411, 68, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Cards\r\n          ");
                 EndContext();
@@ -268,7 +268,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(1541, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2632af3213c471986344256ed43d0f2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c637dc12af0f44e0884b10d43f5924d6", async() => {
                 BeginContext(1647, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Carousel\r\n          ");
                 EndContext();
@@ -301,7 +301,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(1780, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6495eba04be348a480906d6f36d0e8c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a325e5aa15534d07ba35a2dd81cc1fbe", async() => {
                 BeginContext(1886, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Collapse\r\n          ");
                 EndContext();
@@ -334,7 +334,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2019, 175, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b9477185e9a477fb69de34bd88a5bcd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c46de9f92ad84dd4b52ad40948a76241", async() => {
                 BeginContext(2122, 68, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Forms\r\n          ");
                 EndContext();
@@ -367,7 +367,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2252, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "687373e4450d4def812b4e2833726d59", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7eb63f58ae774d7a8949f9106f51264c", async() => {
                 BeginContext(2359, 72, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Jumbotron\r\n          ");
                 EndContext();
@@ -400,7 +400,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2493, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "359fa45b511c4989863ea31634393e5b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e07e1ca86324cb19cbd206879df7115", async() => {
                 BeginContext(2601, 73, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> List group\r\n          ");
                 EndContext();
@@ -433,7 +433,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2736, 173, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6fb9986c9de24509bd1fbfa86b92cc98", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00d0c2d21c304186bb2f2b07d9e725e8", async() => {
                 BeginContext(2838, 67, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Navs\r\n          ");
                 EndContext();
@@ -466,7 +466,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2967, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "182bf04634834952a86cb06350eca3b7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6dd1b7e5ea54dc2b7d262e2020523d5", async() => {
                 BeginContext(3075, 73, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Pagination\r\n          ");
                 EndContext();
@@ -499,7 +499,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(3210, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "839f9451094e486fb10c9e124e678dbe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2101fd71161f4f1083f786c377fa73f6", async() => {
                 BeginContext(3316, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Popovers\r\n          ");
                 EndContext();
@@ -532,7 +532,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(3449, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eccd83da26464ea79de6a4c72e20d236", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "438e71a38bed46b592f0632cf04f431b", async() => {
                 BeginContext(3555, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Progress\r\n          ");
                 EndContext();
@@ -565,7 +565,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(3688, 183, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e8edb31ec204da1ae53c8a6aa6b0ab2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "853c567d0ace4f33876549697561f8d4", async() => {
                 BeginContext(3795, 72, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Scrollspy\r\n          ");
                 EndContext();
@@ -598,7 +598,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(3929, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3c395e74b884425dac488791a1933e5a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4511b02735b54b349285687d32e0f5a8", async() => {
                 BeginContext(4035, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Switches\r\n          ");
                 EndContext();
@@ -631,7 +631,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(4168, 177, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff0c11423f464b52843b9f8fe9c04074", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be817a2b4eae4247a2ed4ee17fcb5697", async() => {
                 BeginContext(4272, 69, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Tables\r\n          ");
                 EndContext();
@@ -664,7 +664,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(4403, 173, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22b419341fa6415ab7747761427e6dab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16c3d9219e0e4d57b8c40eb70b5b2fc0", async() => {
                 BeginContext(4505, 67, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Tabs\r\n          ");
                 EndContext();
@@ -697,7 +697,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(4634, 181, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13dddd281277414280c3c84eb5ab228a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e23dd7dc725d4fc980cd8156c2213e06", async() => {
                 BeginContext(4740, 71, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Tooltips\r\n          ");
                 EndContext();
@@ -740,7 +740,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(5099, 182, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca8816099fa04b5285473af49bc81f85", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed784f5b1ffe45c6a12dcd0520d6d94b", async() => {
                 BeginContext(5207, 70, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-cursor\"></i> Buttons\r\n          ");
                 EndContext();
@@ -773,7 +773,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(5339, 193, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca7b6e68baa948c9af815847917fad0e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "423c1bd0d88049abb4004527772e2273", async() => {
                 BeginContext(5452, 76, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-cursor\"></i> Buttons Group\r\n          ");
                 EndContext();
@@ -806,7 +806,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(5590, 186, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ddc153faa85042a29ac4feac6b47d6b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68dd6a1ac00348c580a94ccf6eb5bdef", async() => {
                 BeginContext(5700, 72, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-cursor\"></i> Dropdowns\r\n          ");
                 EndContext();
@@ -839,7 +839,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(5834, 194, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c5896ce6233499a95a571baeeb7a7f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de5c74a6cda64f3b8afa2d50f6924d1b", async() => {
                 BeginContext(5948, 76, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-cursor\"></i> Brand Buttons\r\n          ");
                 EndContext();
@@ -872,7 +872,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(6102, 167, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83eb73e775fe4f92a0c39627464fc466", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "629d96a5425f47bd8f511f43fca45fb7", async() => {
                 BeginContext(6201, 64, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-pie-chart\"></i> Charts\r\n      ");
                 EndContext();
@@ -905,7 +905,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item nav-dropdown\">\r\n      <a class=\"nav-link nav-dropdown-toggle\" href=\"#\">\r\n        <i class=\"nav-icon icon-star\"></i> Icons\r\n      </a>\r\n      <ul class=\"nav-dropdown-items\">\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(6521, 246, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53d6c4bf04b741ffb29dd5ee9d4d64d0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7a5b8b626374993b50bbd4768a1e894", async() => {
                 BeginContext(6632, 131, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> CoreUI Icons\r\n            <span class=\"badge badge-success\">NEW</span>\r\n          ");
                 EndContext();
@@ -938,7 +938,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n          ");
             EndContext();
             BeginContext(6779, 174, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d93e728854df4770a611d920a93277d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54833c3da1f0405d8cf0303417ecee93", async() => {
                 BeginContext(6883, 66, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Flags\r\n          ");
                 EndContext();
@@ -971,7 +971,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(7011, 248, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00655e2f8d454b5785bf5ccd9a4a53fd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2b791db499f420ab0ee2fe8b4ef5e99", async() => {
                 BeginContext(7122, 133, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Font Awesome\r\n            <span class=\"badge badge-secondary\">4.7</span>\r\n          ");
                 EndContext();
@@ -1004,7 +1004,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(7317, 198, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d4a63f2f4ed488abad05879650df566", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d82e0f8afb95404686fa5718b981b99c", async() => {
                 BeginContext(7433, 78, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Simple Line Icons\r\n          ");
                 EndContext();
@@ -1047,7 +1047,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(7803, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28d0dc526684463caa12f441bf1ff034", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b0a147e59754a7588928deb49a0894f", async() => {
                 BeginContext(7916, 67, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-bell\"></i> Alerts\r\n          ");
                 EndContext();
@@ -1080,7 +1080,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(8045, 182, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "997fb0c4326748a18c0a3c941c1c5c54", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d278888201846eaa030610e22b4ade8", async() => {
                 BeginContext(8157, 66, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-bell\"></i> Badge\r\n          ");
                 EndContext();
@@ -1113,7 +1113,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(8285, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a00d05fcbbb437c83c38f3f6e89e9ef", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "729d883f25aa429397defc7032a6de2a", async() => {
                 BeginContext(8398, 67, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-bell\"></i> Modals\r\n          ");
                 EndContext();
@@ -1146,7 +1146,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n      </ul>\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(8543, 224, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "89886f76ac8142b0b6f4147bd70ec8b5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd4586dfbfec487597af637c00200a51", async() => {
                 BeginContext(8643, 120, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-calculator\"></i> Widgets\r\n        <span class=\"badge badge-primary\">NEW</span>\r\n      ");
                 EndContext();
@@ -1189,7 +1189,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(9089, 182, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c7692d9174a4920926d54050cd5d083", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74a84aea1127483590d6bef164a33f71", async() => {
                 BeginContext(9201, 66, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Login\r\n          ");
                 EndContext();
@@ -1223,7 +1223,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(9329, 188, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77a2d17c5a8f446cbd2e2f40e3e9764b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2558b001d7ca451d8073d74e97e942b0", async() => {
                 BeginContext(9444, 69, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Register\r\n          ");
                 EndContext();
@@ -1257,7 +1257,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(9575, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d16ffc553fba44cba596d640a55b3aec", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc1897aa5feb43d6a174ef2816ca60e6", async() => {
                 BeginContext(9685, 70, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Error 404\r\n          ");
                 EndContext();
@@ -1291,7 +1291,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(9817, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "060260a217b24c35a59d52a8af707d45", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1a914ea7a73434ba5d2a07c142a987b", async() => {
                 BeginContext(9927, 70, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Error 500\r\n          ");
                 EndContext();

@@ -62,114 +62,16 @@ function myselectfilterDate(){
                                     <i class="fa fa-search"></i> Search
                                   </button>
                                 </span>
-                                <input type="text" disabled value="Dia" class="form-control"/>
-                                <select class="form-control" name="dia" id="dia">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                    <option>22</option>
-                                    <option>23</option>
-                                    <option>24</option>
-                                    <option>25</option>
-                                    <option>26</option>
-                                    <option>27</option>
-                                    <option>28</option>
-                                    <option>29</option>
-                                    <option>30</option>
-                                    <option>31</option>
-                                </select>
-                                <input type="text" disabled value="Mes" class="form-control"/>
-                                <select class="form-control" name="mes" id="mes">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                </select>
-                                <input type="text" disabled value="Año" class="form-control"/>
-                                <select class="form-control" name="year" id="year">
-                                    <option>2019</option>
-                                    <option>2018</option>
-                                    <option>2017</option>
-                                    <option>2016</option>
-                                    <option>2015</option>
-                                    <option>2014</option>
-                                    <option>2013</option>
-                                    <option>2012</option>
-                                    <option>2011</option>
-                                    <option>2011</option>
-                                    <option>2010</option>
-                                    <option>209</option>
-                                    <option>2008</option>
-                                    <option>2007</option>
-                                    <option>2006</option>
-                                    <option>2005</option>
-                                    <option>2004</option>
-                                    <option>2003</option>
-                                    <option>2002</option>
-                                    <option>2001</option>
-                                    <option>2000</option>
-                                </select>
-                                <input type="text" disabled value="Hasta" class="form-control" />
-                                <select class="form-control" name="dia" id="otroDia">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                    <option>17</option>
-                                    <option>18</option>
-                                    <option>19</option>
-                                    <option>20</option>
-                                    <option>21</option>
-                                    <option>22</option>
-                                    <option>23</option>
-                                    <option>24</option>
-                                    <option>25</option>
-                                    <option>26</option>
-                                    <option>27</option>
-                                    <option>28</option>
-                                    <option>29</option>
-                                    <option>30</option>
-                                    <option>31</option>
-                                </select>
-                                <input type="text" hidden  name="buscaRemesa" id="buscaRemesa" class="form-control" placeholder="18/1/2019" />
+
+                                    <input type="text" disabled value="Remesas desde:" class="form-control" />
+                                <div class="form-group">
+                                  <input id="midatepicker" type="date" name="midatepicker" class="form-control" />
+                                </div>
+
+                                  <input type="text" disabled value="Hasta:" class="form-control fechaFinal" />
+                                <div class="form-group">
+                                  <input id="otroDia" type="date" name="otroDia" class="form-control" />
+                                </div>
 
                             `;
 
@@ -207,7 +109,15 @@ function saveRemittances() {
         var profitC = 0;
         var profitE = 0;
         var profitGEC = 0;
-        var fechaActual = f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear();
+
+        if (f.getMonth() == 9 || f.getMonth() == 10 || f.getMonth() == 11) {
+
+            var fechaActual = f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear();
+
+        } else {
+
+            var fechaActual = f.getDate() + "/0" + (f.getMonth() + 1) + "/" + f.getFullYear();
+        }
 
 
         var fullTotaly = (rodeBtc * rateSoldsBtc).toFixed(2);
@@ -340,16 +250,31 @@ function look() {
 
     if (myDateF) {
 
-        var dia = document.getElementById("dia").value;
-        var mes = document.getElementById("mes").value;
-        var year = document.getElementById("year").value;
-        var otroDia = document.getElementById("otroDia").value;
+        var calendario = document.getElementById("midatepicker").value;
+        var calendario2 = document.getElementById("otroDia").value;
 
-        var vueltasDias = otroDia - dia;
+        var d = calendario[8] + calendario[9];
+        var d2 = calendario2[8] + calendario2[9];
+
+        var otroDia = parseInt(d2);
+        var dia = parseInt(d);
+        var mes = calendario[5] + calendario[6];
+        var year = calendario[0] + calendario[1] + calendario[2] + calendario[3];
+
+        if (otroDia <= dia) {
+
+            var vueltasDias = 31 - dia;
+
+        } else {
+
+            var vueltasDias = otroDia - dia;
+        }
+        
         p = 0;
         jk = 0;
 
-
+        //alert(calendario + "  calendario 2 " + calendario2);
+        //alert("dia: " + dia + "mes: " + mes + "year: " + year + "otroDia: " + otroDia);
     } else {
         search = document.getElementById("buscaRemesa").value;
     }
@@ -379,6 +304,8 @@ function look() {
 
                 dia = parseInt(dia);
                 diaTotal = dia + i;
+
+
                 var fullDate = diaTotal + "/" + mes + "/" + year;
 
                 remittancesTable.innerHTML = "";
