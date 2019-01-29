@@ -69,7 +69,7 @@ using GECWebApp.Models;
             WriteLiteral("<nav class=\"sidebar-nav\">\r\n  <ul class=\"nav\">\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(80, 225, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e07edc5f2c244c248b87d6284e24adde", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e10f565d9ea48a287670c9638554b8e", async() => {
                 BeginContext(178, 123, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-speedometer\"></i> Dashboard\r\n        <span class=\"badge badge-primary\">NEW</span>\r\n      ");
                 EndContext();
@@ -102,7 +102,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-title\">Pricipal</li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(392, 159, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4dd832bcf56b43659b9ed9ebb4ea396c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d3d1b99d48d41cfb33b28786a881fee", async() => {
                 BeginContext(488, 59, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-flag\"></i> Paises\r\n      ");
                 EndContext();
@@ -135,7 +135,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(597, 162, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f5f780d7067467faa46e0d8705459c0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e76ac08388c4a3494c2cceeea4e0805", async() => {
                 BeginContext(693, 62, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-star\"></i> Acerca de\r\n      ");
                 EndContext();
@@ -168,7 +168,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(805, 164, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b8824dee454478cb35eb9233c2be8c9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8aafee035a94b06b160bb6692600f96", async() => {
                 BeginContext(905, 60, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-bell\"></i> Contato\r\n      ");
                 EndContext();
@@ -210,7 +210,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(1267, 191, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3b5c075d4d44193978ed1a4fec73be9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f7bcc721d314c238f6343c5113bf95f", async() => {
                 BeginContext(1375, 79, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Vender Venezuela\r\n          ");
                 EndContext();
@@ -243,7 +243,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n          <!-- Nuevo codigo de Remesas Johan Carmino -->\r\n          ");
             EndContext();
             BeginContext(1528, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6640d1a083a9425fb3aedb689991937c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27e66007f93b48c9851128f3e2e33450", async() => {
                 BeginContext(1608, 81, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Cuentas de Remesas\r\n          ");
                 EndContext();
@@ -282,7 +282,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(2045, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e4801ad4786642da9f506e8d391b50da", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3338e8809fc047e98cc7aab8e7c5e3d3", async() => {
                 BeginContext(2157, 69, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Ingresar\r\n          ");
                 EndContext();
@@ -316,7 +316,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2288, 189, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2137f32662e4d17bd4ba57d5f314fac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df86e169cb044082aca01b3b7e1182be", async() => {
                 BeginContext(2403, 70, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Registrar\r\n          ");
                 EndContext();

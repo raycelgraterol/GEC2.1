@@ -72,7 +72,6 @@ function myselectfilterDate(){
                                 <div class="form-group">
                                   <input id="otroDia" type="date" name="otroDia" class="form-control" />
                                 </div>
-
                             `;
 
     }
