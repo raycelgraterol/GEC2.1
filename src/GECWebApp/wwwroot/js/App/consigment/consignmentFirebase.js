@@ -11,6 +11,11 @@ var dataremittances5 = new Array();
 var dataremittances6 = new Array();
 var dataremittances7 = new Array();
 var dataremittances8 = new Array();
+var dataremittances9 = new Array();
+var dataremittances10 = new Array();
+var dataremittances11 = new Array();
+var dataremittances12 = new Array();
+var dataremittances13 = new Array();
 
 var colection = "Remesas";
 var idremittances = "";
@@ -161,7 +166,7 @@ function saveRemittances() {
 
         }
         else {
-            addFirebase(db, colection, fullTotaly, contactCheck, profitC, profitE, profitGEC, entryAmount, profitcompany, fechaActual, myContry);
+            addFirebase(db, colection, fullTotaly, contactCheck, profitC, profitE, profitGEC, entryAmount, profitcompany, fechaActual, myContry, rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc);
         }
 
 
@@ -214,7 +219,18 @@ function getRemittances() {
 function updateRemittances(id) {
 
     var f = new Date();
-    var nowDay = f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear();
+    var nowDay = document.getElementById("meteFecha").value;
+
+    var myDay = nowDay[8] + nowDay[9];
+    var myMount = nowDay[5] + nowDay[6];
+    var myYear = nowDay[0] + nowDay[1] + nowDay[2] + nowDay[3];
+
+    var fechaActual = myDay + "/" + myMount + "/" + myYear;
+
+    var rodeBtc = parseFloat(document.getElementById("cantidadBtc").value);
+    var rodeRemittances = parseFloat(document.getElementById("montoRemesas").value);
+    var remittancesRates = parseFloat(document.getElementById("tasasRemesas").value);
+    var rateSoldsBtc = parseFloat(document.getElementById("tasasVentasBtc").value);
 
     var totalyPriceDB = document.getElementById("montoTotal").value;
     var contactCheckBD = document.getElementById("contacto").checked;
@@ -223,10 +239,10 @@ function updateRemittances(id) {
     var profitGECDB = document.getElementById("gananciaGEC").value;
     var entryAmountDB = document.getElementById("montoEntrega").value;
     var priceNtDB = document.getElementById("gananciaNeta").value;
-    var myDate = nowDay;
+    var myDate = fechaActual;
     var myContry = document.getElementById("pais").value;
 
-    firebaseUpdate(colection, id, totalyPriceDB, contactCheckBD, profitCBD, profitEDB, profitGECDB, entryAmountDB, priceNtDB, myDate, myContry);
+    firebaseUpdate(colection, id, totalyPriceDB, contactCheckBD, profitCBD, profitEDB, profitGECDB, entryAmountDB, priceNtDB, myDate, myContry, rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc);
     console.log(id);
 }
 
@@ -240,6 +256,11 @@ function saveDataId(id, n) {
     document.getElementById("gananciaNeta").value = dataremittances6[n];
     document.getElementById("montoTotal").value = dataremittances7[n];
     document.getElementById("pais").value = dataremittances8[n];
+    document.getElementById("cantidadBtc").value = dataremittances9[n];
+    document.getElementById("montoRemesas").value = dataremittances10[n];
+    document.getElementById("tasasRemesas").value = dataremittances11[n];
+    document.getElementById("tasasVentasBtc").value = dataremittances12[n];
+    document.getElementById("meteFecha").value = dataremittances13[n];
 
     idremittances = id;
 }
