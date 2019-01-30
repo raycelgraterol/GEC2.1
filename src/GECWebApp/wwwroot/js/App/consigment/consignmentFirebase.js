@@ -260,7 +260,9 @@ function saveDataId(id, n) {
     document.getElementById("montoRemesas").value = dataremittances10[n];
     document.getElementById("tasasRemesas").value = dataremittances11[n];
     document.getElementById("tasasVentasBtc").value = dataremittances12[n];
-    document.getElementById("meteFecha").value = dataremittances13[n];
+
+    var fechaActual = dataremittances13[n];
+    document.getElementById("meteFecha").value = fechaActual[6] + fechaActual[7] + fechaActual[8] + fechaActual[9] + "-" + fechaActual[3] + fechaActual[4] + "-" + fechaActual[0] + fechaActual[1];
 
     idremittances = id;
 }
