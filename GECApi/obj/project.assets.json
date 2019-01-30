@@ -722,23 +722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\craycel\\.nuget\\packages\\": {},
+    "C:\\Users\\truco\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\GECApi.csproj",
+      "projectUniqueName": "C:\\repositorio\\GitGlobal\\GEC2.1\\GECApi\\GECApi.csproj",
       "projectName": "GECApi",
-      "projectPath": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\GECApi.csproj",
-      "packagesPath": "C:\\Users\\craycel\\.nuget\\packages\\",
-      "outputPath": "C:\\Repositorio\\GitRespository\\GEC\\GEC2.1\\GECApi\\obj\\",
+      "projectPath": "C:\\repositorio\\GitGlobal\\GEC2.1\\GECApi\\GECApi.csproj",
+      "packagesPath": "C:\\Users\\truco\\.nuget\\packages\\",
+      "outputPath": "C:\\repositorio\\GitGlobal\\GEC2.1\\GECApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\craycel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\truco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

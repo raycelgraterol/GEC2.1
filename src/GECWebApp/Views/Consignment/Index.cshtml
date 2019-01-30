@@ -9,24 +9,36 @@
 <h2>Remesas</h2>
 <div class="container">
   <div class="row">
-    <div class="form-group col-sm-4">
-      <select class="form-control" id="pais" name="pais">
-        <option>COLOMBIA</option>
-        <option>CHILE</option>
-        <option>ECUADOR</option>
-        <option>PANAMA</option>
-        <option>PERU</option>
-        <option>R. DOMINICANA</option>
-        <option>MEXICO</option>
-        <option>ARGENTINA</option>
-        <option>ESPAÑA</option>
-      </select>
-    </div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-
     <div class="col-md-12">
       <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="form-group col-sm-4">
+              <select class="form-control" id="pais" name="pais">
+                <option>COLOMBIA</option>
+                <option>CHILE</option>
+                <option>ECUADOR</option>
+                <option>PANAMA</option>
+                <option>PERU</option>
+                <option>R. DOMINICANA</option>
+                <option>MEXICO</option>
+                <option>ARGENTINA</option>
+                <option>ESPAÑA</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <span class="input-group-prepend">
+                  <input type="text" disabled value="Fecha:" class="form-control" />
+                </span>
+                <input id="meteFecha" type="date" name="meteFecha" class="form-control" />
+              </div>
+
+            </div>
+            <div class="col-sm-4"></div>
+          </div>
+        </div>
+
         <div class="card-body">
           <!-- Primera fila -->
           <div class="row">
@@ -144,62 +156,65 @@
 <!--Tabla de datos de Remesas-->
 
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-5">
-      <div class="col-md-9 col-form-label">
-        <div class="form-check form-check-inline mr-1">
-          <input class="form-check-input" type="radio" name="eleccionFiltro" id="filtrofecha" onchange="myselectfilterDate()" checked>
-          <label class="form-check-label" for="eleccionFiltro">Fecha</label>
-        </div>
-        <div class="form-check form-check-inline mr-1">
-          <input class="form-check-input" type="radio" name="eleccionFiltro" id="filtroPais" onchange="myselectfilterContry()">
-          <label class="form-check-label" for="eleccionFiltro">Pais</label>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-7">
-      <div class="input-group" id="contenedorBusqueda">
-        <span class="input-group-prepend">
-          <button type="button" name="botonBuscar" id="botonBuscar" class="btn btn-primary" onclick="look()">
-            <i class="fa fa-search"></i> Search
-          </button>
-        </span>
-
-          <input type="text" disabled value="Remesas desde:" class="form-control" />
-        <div class="form-group">
-          <input id="midatepicker" type="date" name="midatepicker" class="form-control" />
-        </div>
-
-          <input type="text" disabled value="Hasta:" class="form-control fechaFinal" />
-        <div class="form-group">
-          <input id="otroDia" type="date" name="otroDia" class="form-control" />
-        </div>
-      </div>
-        
-      
-       
-      
-    </div>
-  </div>
+  
 
   <div class="row">
     <div class="col-sm-12">
-      <table class="table table-responsive-sm table-striped">
-        <thead class="">
-          <tr>
-            <th scope="col">Fecha</th>
-            <th scope="col">Pais</th>
-            <th scope="col">Ganancia GEC</th>
-            <th scope="col">Ganancia Enlace</th>
-            <th scope="col">Ganancia Contacto</th>
-            <th scope="col">Monto Entrega</th>
-            <th scope="col">Ganancia</th>
-            <th scope="col">Monto Total</th>
-          </tr>
-        </thead>
-        <tbody id="datosTabla"></tbody>
-      </table>
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="col-md-9 col-form-label">
+                <div class="form-check form-check-inline mr-1">
+                  <input class="form-check-input" type="radio" name="eleccionFiltro" id="filtrofecha" onchange="myselectfilterDate()" checked>
+                  <label class="form-check-label" for="eleccionFiltro">Fecha</label>
+                </div>
+                <div class="form-check form-check-inline mr-1">
+                  <input class="form-check-input" type="radio" name="eleccionFiltro" id="filtroPais" onchange="myselectfilterContry()">
+                  <label class="form-check-label" for="eleccionFiltro">Pais</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-7">
+              <div class="input-group" id="contenedorBusqueda">
+                <span class="input-group-prepend">
+                  <button type="button" name="botonBuscar" id="botonBuscar" class="btn btn-primary" onclick="look()">
+                    <i class="fa fa-search"></i> Search
+                  </button>
+                </span>
+
+                <input type="text" disabled value="Remesas desde:" class="form-control" />
+                <div class="form-group">
+                  <input id="midatepicker" type="date" name="midatepicker" class="form-control" />
+                </div>
+
+                <input type="text" disabled value="Hasta:" class="form-control fechaFinal" />
+                <div class="form-group">
+                  <input id="otroDia" type="date" name="otroDia" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <table class="table table-responsive-sm">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Pais</th>
+                <th scope="col">Ganancia GEC</th>
+                <th scope="col">Ganancia Enlace</th>
+                <th scope="col">Ganancia Contacto</th>
+                <th scope="col">Monto Entrega</th>
+                <th scope="col">Ganancia</th>
+                <th scope="col">Monto Total</th>
+              </tr>
+            </thead>
+            <tbody id="datosTabla"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <div class="col-sm-12">

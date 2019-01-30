@@ -79,9 +79,10 @@ function myselectfilterDate(){
 }
 
 
-function validate(amountBtc, remittancesAmount, remittanceRates, ratesSoldsBtc) {
+function validate(amountBtc, remittancesAmount, remittanceRates, ratesSoldsBtc, insertDate) {
 
-    if (amountBtc == "" || remittancesAmount == "" || remittanceRates == "" || ratesSoldsBtc == "") {
+
+    if (amountBtc == "" || remittancesAmount == "" || remittanceRates == "" || ratesSoldsBtc == "" || insertDate == "") {
 
         return message = "Porfavor no dejar ningun recuadro vacio.";
     }
@@ -94,14 +95,22 @@ function validate(amountBtc, remittancesAmount, remittanceRates, ratesSoldsBtc) 
 
 function saveRemittances() {
 
+    var rodeBtcV = document.getElementById("cantidadBtc").value;
+    var rodeRemittancesV = document.getElementById("montoRemesas").value;
+    var remittancesRatesV = document.getElementById("tasasRemesas").value;
+    var rateSoldsBtcV = document.getElementById("tasasVentasBtc").value;
+
+
     var rodeBtc = parseFloat(document.getElementById("cantidadBtc").value);
     var rodeRemittances = parseFloat(document.getElementById("montoRemesas").value);
     var remittancesRates = parseFloat(document.getElementById("tasasRemesas").value);
     var rateSoldsBtc = parseFloat(document.getElementById("tasasVentasBtc").value);
+
+    var insertDate = document.getElementById("meteFecha").value;
     var myContry = document.getElementById("pais").value;
 
 
-    if (validate(rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc) == "") {
+    if (validate(rodeBtcV, rodeRemittancesV, remittancesRatesV, rateSoldsBtcV, insertDate) == "") {
 
         var contactCheck = document.getElementById("contacto").checked;
         var f = new Date();
@@ -109,14 +118,11 @@ function saveRemittances() {
         var profitE = 0;
         var profitGEC = 0;
 
-        if (f.getMonth() == 9 || f.getMonth() == 10 || f.getMonth() == 11) {
+        var myDay = insertDate[8] + insertDate[9];
+        var myMount = insertDate[5] + insertDate[6];
+        var myYear = insertDate[0] + insertDate[1] + insertDate[2] + insertDate[3];
 
-            var fechaActual = f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear();
-
-        } else {
-
-            var fechaActual = f.getDate() + "/0" + (f.getMonth() + 1) + "/" + f.getFullYear();
-        }
+        var fechaActual = myDay + "/" + myMount + "/" + myYear;
 
 
         var fullTotaly = (rodeBtc * rateSoldsBtc).toFixed(2);
@@ -162,7 +168,8 @@ function saveRemittances() {
     }
     else {
         var msnDiv = document.getElementById("mensajeError");
-        msnDiv.innerHTML = `<div class="alert alert-danger">${validate(rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc)}</div>`
+        msnDiv.innerHTML = `<div class="alert alert-danger">${validate(rodeBtcV, rodeRemittancesV, remittancesRatesV, rateSoldsBtcV)}</div>`;
+        setTimeout(function () { msnDiv.innerHTML = `<div class=""></div>`; }, 3000);
     }
 
 
@@ -255,19 +262,29 @@ function look() {
         var d = calendario[8] + calendario[9];
         var d2 = calendario2[8] + calendario2[9];
 
+        var nMes1 = parseInt(calendario[5] + calendario[6]);
+        var nMes2 = parseInt(calendario2[5] + calendario2[6]);
+
         var otroDia = parseInt(d2);
         var dia = parseInt(d);
         var mes = calendario[5] + calendario[6];
+        var mes2 = calendario2[5] + calendario2[6];
         var year = calendario[0] + calendario[1] + calendario[2] + calendario[3];
 
-        if (otroDia <= dia) {
+        var vueltasMes = nMes2 - nMes1;
 
-            var vueltasDias = 31 - dia;
+        var meses = 0;
+
+        if (vueltasMes == 0) {
+
+            var vueltasDias = otroDia - dia;
 
         } else {
 
-            var vueltasDias = otroDia - dia;
+            var vueltasDias = 31 - dia;
+            
         }
+
         
         p = 0;
         jk = 0;
@@ -277,11 +294,8 @@ function look() {
     } else {
         search = document.getElementById("buscaRemesa").value;
     }
-
-    
+ 
     var remittancesTable = document.getElementById("datosTabla");
-
-
     var errFilter = document.getElementById("errorFiltro");
 
     if (myDateF) {
@@ -297,41 +311,78 @@ function look() {
 
     if (filter != "") {
 
-        if (filter == "fecha") {
+        if (filter == "fecha") { 
 
-            for (var i = 0; i < vueltasDias+1; i++) {
-
-                dia = parseInt(dia);
-                diaTotal = dia + i;
-
-
-                var fullDate = diaTotal + "/" + mes + "/" + year;
+            for (var l = 0; l <= vueltasMes; l++) {
 
                 remittancesTable.innerHTML = "";
 
-                db.collection(colection).where(filter, "==", fullDate).limit(8)
-                    .get()
-                    .then(function (querySnapshot) {
+                for (var i = 0; i < vueltasDias + 1; i++) {
 
-                        if (getTable(querySnapshot, remittancesTable, jk) == (vueltasDias + 1)) {
+                    dia = parseInt(dia);
+                    diaTotal = dia + i;
 
-                            if (numberDoc == 0) {
+                    if (l == 0) {
 
-                                errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
-                                setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
+                        
+                    } else {
+
+                        dia = 1;
+                        diaTotal = dia + i;
+                    }
+
+                    remittancesTable.innerHTML = "";
+
+                    if (diaTotal < 10) {
+                        var fullDate = "0" + diaTotal + "/" + mes + "/" + year;
+                    } else {
+                        var fullDate = diaTotal + "/" + mes + "/" + year;
+                    }
+
+                    db.collection(colection).where(filter, "==", fullDate).limit(8)
+                        .get()
+                        .then(function (querySnapshot) {
+
+                            if (getTable(querySnapshot, remittancesTable, jk) == (vueltasDias + 1)) {
+
+                                if (numberDoc == 0) {
+
+                                    errFilter.innerHTML = `<div class="alert alert-danger" id="errorFiltro">Ingreso algun dato Incorrecto</div>`;
+                                    setTimeout(function () { errFilter.innerHTML = `<div class=""></div>`; getRemittances(); }, 3000);
+
+                                }
 
                             }
+                            else {
+                                errFilter.innerHTML = `<div id="errorFiltro"></div>`;
+                            }
 
-                        }
-                        else {
-                            errFilter.innerHTML = `<div id="errorFiltro"></div>`;
-                        }
+                        })
+                        .catch(function (error) {
+                            console.log("Error getting documents: ", error);
+                        });
 
-                    })
-                    .catch(function (error) {
-                        console.log("Error getting documents: ", error);
-                    });
+                }
+
+                if (vueltasMes != 0) {
+
+                    i = 0;
+                    vueltasDias = otroDia;
+                    var o = parseInt(mes);
+                    meses = parseInt(o + 1);
+
+                    if (meses < 10) {
+                        mes = "0" + meses;
+
+                    } else {
+                        mes = "" + meses;
+                    }
+
+                }
+
             }
+
+            
 
         } else {
 
