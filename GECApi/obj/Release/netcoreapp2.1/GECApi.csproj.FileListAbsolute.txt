@@ -1,0 +1,9 @@
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Release\netcoreapp2.1\GECApi.deps.json
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Release\netcoreapp2.1\GECApi.dll
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\bin\Release\netcoreapp2.1\GECApi.pdb
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.csprojAssemblyReference.cache
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.csproj.CoreCompileInputs.cache
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.AssemblyInfoInputs.cache
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.AssemblyInfo.cs
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.dll
+C:\Repositorio\GitRespository\GEC\GEC2.1\GECApi\obj\Release\netcoreapp2.1\GECApi.pdb
