@@ -269,6 +269,7 @@ C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.dll
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.pdb
 C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Consignment\Index.g.cshtml.cs
+C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\Razor\Views\ManagementChange\TraidingView.g.cshtml.cs
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\bin\Debug\netcoreapp2.1\GECWebApp.deps.json
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\bin\Debug\netcoreapp2.1\GECWebApp.runtimeconfig.json
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\bin\Debug\netcoreapp2.1\GECWebApp.runtimeconfig.dev.json
@@ -361,4 +362,3 @@ C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\G
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.csproj.CopyComplete
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.dll
 C:\Repositorio\GitRespository\GEC\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\GECWebApp.pdb
-C:\repositorio\GitGlobal\GEC2.1\src\GECWebApp\obj\Debug\netcoreapp2.1\Razor\Views\ManagementChange\TraidingView.g.cshtml.cs
