@@ -66,8 +66,8 @@ namespace GECWebApp.Controllers
             var model = new ExchangeModel() {
                 rateFormat = isColombia ? decimal.Round(buySP/sellVe,2).ToString()  : (rate).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")),
                 rateValue = (isColombia ? buySP/sellVe : rate),
-                rateValueGain = isColombia ? (rate) + gain : (rate) - gain,
-                rateFormatGain = isColombia ? decimal.Round((buySP/sellVe) + gain, 2).ToString() : ((rate) - gain).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))
+                rateValueGain = isColombia ? (rate * (100 + gain)/100) : (rate * (100 - gain)/100),
+                rateFormatGain = isColombia ? decimal.Round((buySP/sellVe)*((100 + gain) / 100), 2).ToString() : (rate * (100 - gain)/100).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))
             };
 
             return Json(model);

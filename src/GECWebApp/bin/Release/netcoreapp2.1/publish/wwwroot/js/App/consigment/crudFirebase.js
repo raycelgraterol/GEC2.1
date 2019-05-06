@@ -5,10 +5,14 @@ var numberDoc = 0;
 var p = -1;
 
 // funcion para updatear en firebase
-function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry) {
+function firebaseUpdate(colection, id, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry, rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc) {
 
     db.collection(colection).doc(id).set({
 
+        Btc: rodeBtc,
+        Remittances: rodeRemittances,
+        remittancesR: remittancesRates,
+        rateSBtc: rateSoldsBtc,
         montoTotalDB: amountT,
         contactoCheckBD: contact,
         gananciaCBD: profitC,
@@ -79,6 +83,11 @@ function getTable(querySnapshot, remittancesTable, i) {
             dataremittances6[i] = doc.data().gananciaNetaDB;
             dataremittances7[i] = doc.data().montoTotalDB;
             dataremittances8[i] = doc.data().pais;
+            dataremittances9[i] = doc.data().Btc;
+            dataremittances10[i] = doc.data().Remittances;
+            dataremittances11[i] = doc.data().remittancesR;
+            dataremittances12[i] = doc.data().rateSBtc;
+            dataremittances13[i] = doc.data().fecha;
             i++;
 
             jk = i;
@@ -95,10 +104,14 @@ function getTable(querySnapshot, remittancesTable, i) {
     
 }
 
-function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry) {
+function addFirebase(db, colection, amountT, contact, profitC, profitE, profitGEC, amountE, profitN, myDate, myContry, rodeBtc, rodeRemittances, remittancesRates, rateSoldsBtc) {
 
     db.collection(colection).add({
 
+        Btc: rodeBtc,
+        Remittances: rodeRemittances,
+        remittancesR: remittancesRates,
+        rateSBtc: rateSoldsBtc,
         montoTotalDB: amountT,
         contactoCheckBD: contact,
         gananciaCBD: profitC,
