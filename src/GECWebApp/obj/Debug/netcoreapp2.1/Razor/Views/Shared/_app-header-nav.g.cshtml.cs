@@ -58,7 +58,7 @@ using GECWebApp.Models;
             WriteLiteral("<ul class=\"nav navbar-nav d-md-down-none\">\r\n  <li class=\"nav-item px-3\">\r\n    ");
             EndContext();
             BeginContext(78, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d64a02b91574f81874fb2201b14da9a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "87f4ea38cdf5487098d1a549590f39f2", async() => {
                 BeginContext(134, 4, true);
                 WriteLiteral("Home");
                 EndContext();
@@ -84,7 +84,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n  </li>\r\n  <li class=\"nav-item px-3\">\r\n    ");
             EndContext();
             BeginContext(187, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f98ee5e4eeb443718e3962aae7f021e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "585fd983b3ab499b8a49de4555ea82df", async() => {
                 BeginContext(243, 5, true);
                 WriteLiteral("About");
                 EndContext();
@@ -110,7 +110,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n  </li>\r\n  <li class=\"nav-item px-3\">\r\n    ");
             EndContext();
             BeginContext(297, 69, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3d6f55c7364410baa2847b32ec4a13f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bcea289277414483b710fb5cc99c5904", async() => {
                 BeginContext(355, 7, true);
                 WriteLiteral("Contact");
                 EndContext();

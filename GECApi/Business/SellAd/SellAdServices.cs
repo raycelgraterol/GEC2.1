@@ -91,26 +91,12 @@ namespace GECApi.Business.SellAd
 
                 Decimal[] amount = new Decimal[2];
 
-                amount[0] = (ads.Where(x => (x.bank_name.ToLower().Contains("mercantil")
-                                         || x.bank_name.ToLower().Contains("mercan")
-                                         || x.bank_name.ToLower().Contains("mer")
-                                         || x.bank_name.ToLower().Contains("bod")
-                                         || x.bank_name.ToLower().Contains("provincial")
-                                         || x.bank_name.ToLower().Contains("banes")
-                                         || x.bank_name.ToLower().Contains("banesco"))
-                                         && x.currency.Contains("VES"))
+                amount[0] = (ads.Where(x => x.currency.Contains("VES"))
                                          .Skip(2).Take(5).Sum(x => x.temp_price)) / 5;
 
-                amount[1] = (ads.Where(x => (x.bank_name.ToLower().Contains("mercantil")
-                                         || x.bank_name.ToLower().Contains("mercan")
-                                         || x.bank_name.ToLower().Contains("mer")
-                                         || x.bank_name.ToLower().Contains("bod")
-                                         || x.bank_name.ToLower().Contains("provincial")
-                                         || x.bank_name.ToLower().Contains("banes")
-                                         || x.bank_name.ToLower().Contains("banesco"))
-                                         && x.currency.Contains("VES"))
-                                         .Skip(2).Take(5).Sum(x => x.temp_price)) / 5;
-                                         
+                amount[1] = (ads.Where(x => x.currency.Contains("VES"))
+                                         .Skip(2).Take(1).Sum(x => x.temp_price));
+
 
                 return amount;
             }

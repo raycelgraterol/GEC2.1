@@ -71,7 +71,7 @@ using GECWebApp.Models;
             WriteLiteral("<nav class=\"sidebar-nav\">\r\n  <ul class=\"nav\">\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(80, 225, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df09b8cab73c475fb7c35635ee30266e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2098a082360427a8d24f689ce253082", async() => {
                 BeginContext(178, 123, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-speedometer\"></i> Dashboard\r\n        <span class=\"badge badge-primary\">NEW</span>\r\n      ");
                 EndContext();
@@ -104,7 +104,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-title\">Pricipal</li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(392, 159, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1735ac6e5bf044c2beb99bdf91d90ca5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c39ddc66f0644f078379775816226361", async() => {
                 BeginContext(488, 59, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-flag\"></i> Paises\r\n      ");
                 EndContext();
@@ -137,7 +137,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(597, 162, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "69656bdfcf644dc3b01f9e74155621e5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f74f29e2fc7b4515a6068da58cd47c85", async() => {
                 BeginContext(693, 62, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-star\"></i> Acerca de\r\n      ");
                 EndContext();
@@ -170,7 +170,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n    </li>\r\n    <li class=\"nav-item\">\r\n      ");
             EndContext();
             BeginContext(805, 164, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c4196c21837d45d1842987e1d699e040", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "146f96b13dfb49c2b8b30eb76f509611", async() => {
                 BeginContext(905, 60, true);
                 WriteLiteral("\r\n        <i class=\"nav-icon icon-bell\"></i> Contato\r\n      ");
                 EndContext();
@@ -212,7 +212,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(1267, 191, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dff636f46a1647acb8f9fb2d572bd1da", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9051f96603541d3bdb14bd373d3c77d", async() => {
                 BeginContext(1375, 79, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Vender Venezuela\r\n          ");
                 EndContext();
@@ -245,7 +245,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n          <!-- Nuevo codigo de Remesas Johan Carmino -->\r\n          ");
             EndContext();
             BeginContext(1528, 165, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa9c07793c2446c9be6d24101f4541c7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6050d4e32ae74b7b964576d4c8642a97", async() => {
                 BeginContext(1608, 81, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Cuentas de Remesas\r\n          ");
                 EndContext();
@@ -272,7 +272,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n          ");
             EndContext();
             BeginContext(1705, 205, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1f15e61640a84c95beb46403cadca2c4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c68536a3215c400a8a0f5fd5fddf3601", async() => {
                 BeginContext(1827, 79, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-puzzle\"></i> Vender Venezuela\r\n          ");
                 EndContext();
@@ -317,7 +317,7 @@ using GECWebApp.Models;
           ");
             EndContext();
             BeginContext(2262, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea0f58762f1d4227b05f56988278eea9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10ab41998e3b4c018f8f18d4bd371c43", async() => {
                 BeginContext(2374, 69, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Ingresar\r\n          ");
                 EndContext();
@@ -351,7 +351,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n        </li>\r\n        <li class=\"nav-item\">\r\n          ");
             EndContext();
             BeginContext(2505, 189, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fec3e5bf4430476aa98b1b90671b37f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b978bea3fe34e55a1da3bd74bca854c", async() => {
                 BeginContext(2620, 70, true);
                 WriteLiteral("\r\n            <i class=\"nav-icon icon-star\"></i> Registrar\r\n          ");
                 EndContext();

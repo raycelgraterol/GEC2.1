@@ -60,7 +60,7 @@ using GECWebApp.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n\r\n");
             EndContext();
             BeginContext(46, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec2985fa773a4b94a2c0c4727bb97d33", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e224bf1eb8c415896177cbdf82b4e2c", async() => {
                 BeginContext(52, 60, true);
                 WriteLiteral("\r\n  <meta charset=\"utf-8\" />\r\n  <title>Vendor list</title>\r\n");
                 EndContext();
@@ -80,7 +80,7 @@ using GECWebApp.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(123, 430, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd91933a39c444bfb198dafc0b90b44d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f020f62f6ff04210b856920a25437d7e", async() => {
                 BeginContext(197, 349, true);
                 WriteLiteral(@"
 

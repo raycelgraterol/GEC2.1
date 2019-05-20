@@ -13,5 +13,9 @@ namespace GECApi.Entities
         public decimal rateValueGain { get; set; }
 
         public string rateFormatGain { get; set; }
+
+        public decimal rateValueHigh { get; set; }
+
+        public string rateFormatHigh { get; set; }
     }
 }

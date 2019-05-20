@@ -26,7 +26,8 @@ namespace GECWebApp.Controllers
             {
                 var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "", 2);
                 ViewBag.sellVe = sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
-                ViewBag.sellVeHigh = sellVE[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
+
+                ViewBag.sellVeHigh = (await SellAdServices.SellAdsAboutAmount("VE", "", 1))[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
 
                 HttpContext.Session.SetString("SellVeFormat", sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")));
                 HttpContext.Session.SetString("SellVeDecimal", sellVE[0].ToString());
