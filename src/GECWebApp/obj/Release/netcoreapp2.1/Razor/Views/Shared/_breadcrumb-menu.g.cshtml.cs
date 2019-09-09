@@ -58,7 +58,7 @@ using GECWebApp.Models;
             WriteLiteral("<li class=\"breadcrumb-menu d-md-down-none\">\r\n  <div class=\"btn-group\" role=\"group\" aria-label=\"Button group\">\r\n    <a class=\"btn\" href=\"#\">\r\n      <i class=\"icon-speech\"></i>\r\n    </a>\r\n    ");
             EndContext();
             BeginContext(190, 142, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d331782635c948ec8df40c59548fef89", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9914ec5b0b743278b025a3b45aaa96d", async() => {
                 BeginContext(278, 50, true);
                 WriteLiteral("\r\n      <i class=\"icon-graph\"></i> Dashboard\r\n    ");
                 EndContext();

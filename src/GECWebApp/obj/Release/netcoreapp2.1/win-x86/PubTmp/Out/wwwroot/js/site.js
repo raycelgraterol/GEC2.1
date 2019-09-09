@@ -55,6 +55,7 @@ var exchangeRates = (function () {
                     var myObj = JSON.parse(data);
                     $("#" + idShow).html(myObj.rateFormat);
                     $("#" + idShow + "G").html(myObj.rateFormatGain);
+                    $("#" + idShow + "H").html(myObj.rateFormatHigh);
                     $("#" + idShow + "Loader").hide();
                 }
             }
