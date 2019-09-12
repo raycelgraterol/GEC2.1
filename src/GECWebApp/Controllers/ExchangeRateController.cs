@@ -32,9 +32,11 @@ namespace GECWebApp.Controllers
         {
             try
             {
-                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "", 1);
+                var sellVe = (await SellAdServices.SellAdsAboutAmount("VE", "", 2))[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
 
-                return Json(new { success = true, sellVe = sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")), sellVeHigh = sellVE[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")) });
+                var sellVeHigh = (await SellAdServices.SellAdsAboutAmount("VE", "", 1))[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"));
+
+                return Json(new { success = true, sellVe, sellVeHigh });
             }
             catch (Exception)
             {
