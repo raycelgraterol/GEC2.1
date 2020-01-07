@@ -60,7 +60,7 @@ namespace GECApi.Business.SellAd
             }
         }
 
-        public async static Task<Decimal[]> SellAdsAboutAmount(string countryCode, string paymentMethod, int page, string countryName = "venezuela")
+        public async static Task<Decimal[]> SellAdsAboutAmount(string countryCode, string paymentMethod, int page, int skip, string countryName = "venezuela")
         {
             try
             {
@@ -89,31 +89,33 @@ namespace GECApi.Business.SellAd
                     ads.Add(ad);
                 }
 
-                Decimal[] amount = new Decimal[2];
+                decimal[] amount = new decimal[2];
 
                 amount[0] = (ads.Where(x => ((x.bank_name.ToLower().Contains("mercantil")
                                          || x.bank_name.ToLower().Contains("mercan")
                                          || x.bank_name.ToLower().Contains("mer")
+                                         || x.bank_name.ToLower().Contains("venezuela")
+                                         || x.bank_name.ToLower().Contains("venez")
                                          || x.bank_name.ToLower().Contains("bod")
                                          || x.bank_name.ToLower().Contains("provincial")
                                          || x.bank_name.ToLower().Contains("banes")
                                          || x.bank_name.ToLower().Contains("banesco"))
-                                         && x.currency.Contains("VES")
-                                         && x.min_amount <= 20000m)
+                                         && x.currency.Contains("VES"))
                                          && !x.bank_name.ToLower().Contains("bitmain"))
-                                         .Skip(2).Take(5).Sum(x => x.temp_price)) / 5;
+                                         .Skip(skip + 10).Take(10).Sum(x => x.temp_price)) / 10;
 
                 amount[1] = (ads.Where(x => (x.bank_name.ToLower().Contains("mercantil")
                                          || x.bank_name.ToLower().Contains("mercan")
                                          || x.bank_name.ToLower().Contains("mer")
+                                         || x.bank_name.ToLower().Contains("venezuela")
+                                         || x.bank_name.ToLower().Contains("venez")
                                          || x.bank_name.ToLower().Contains("bod")
                                          || x.bank_name.ToLower().Contains("provincial")
                                          || x.bank_name.ToLower().Contains("banes")
                                          || x.bank_name.ToLower().Contains("banesco"))
                                          && x.currency.Contains("VES")
-                                         && x.min_amount <= 20000m
                                          && !x.bank_name.ToLower().Contains("bitmain"))
-                                         .Skip(2).Take(5).Sum(x => x.temp_price)) / 5;
+                                         .Skip(skip).Take(10).Sum(x => x.temp_price)) / 10;
                                          
 
                 return amount;

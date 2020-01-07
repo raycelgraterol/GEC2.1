@@ -32,7 +32,7 @@ namespace GECWebApp.Controllers
         {
             try
             {
-                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "",2);
+                var sellVE = await SellAdServices.SellAdsAboutAmount("VE", "", 2, 0);
 
                 return Json(new { success = true, sellVe = sellVE[0].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")), sellVeHigh = sellVE[1].ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")) });
             }
@@ -46,9 +46,21 @@ namespace GECWebApp.Controllers
         [HttpPost]
         public async Task<JsonResult> Post(string countryCode, string paymentMethod, string currency, decimal gain, bool isColombia)
         {
-            var buySP = BuyAdServices.buyAdsAboutAmount(countryCode, paymentMethod, currency, countryCode == "PE" && currency == "USD" ? 2 : 10);
+            int quantity = 10;
 
-            Decimal sellVe = 1;
+            if (countryCode == "PE" && currency == "USD")
+            {
+                quantity = 4;
+            }
+            else if (countryCode == "DO")
+            {
+                quantity = 5;
+            }
+            
+
+            var buySP = BuyAdServices.buyAdsAboutAmount(countryCode, paymentMethod, currency, quantity);
+
+            decimal sellVe = 1;
             
             byte[] test = null;
             if (HttpContext.Session.TryGetValue("SellVeDecimal", out test))
@@ -57,17 +69,17 @@ namespace GECWebApp.Controllers
             }
             else
             {
-                var result = await SellAdServices.SellAdsAboutAmount("VE", "", 2);
+                var result = await SellAdServices.SellAdsAboutAmount("VE", "", 2, 0);
                 sellVe = result[0];
             }
 
             var rate = decimal.Round((sellVe / buySP),4);
 
             var model = new ExchangeModel() {
-                rateFormat = isColombia ? decimal.Round(buySP/sellVe,2).ToString()  : (rate).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")),
-                rateValue = (isColombia ? buySP/sellVe : rate),
-                rateValueGain = isColombia ? (rate) + gain : (rate) - gain,
-                rateFormatGain = isColombia ? decimal.Round((buySP/sellVe) + gain, 2).ToString() : ((rate) - gain).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))
+                rateFormat = (rate).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE")),
+                rateValue = rate,
+                rateValueGain = rate - (rate*gain/100),
+                rateFormatGain = (rate - (rate * gain / 100)).ToString("C3", CultureInfo.CreateSpecificCulture("es-VE"))
             };
 
             return Json(model);

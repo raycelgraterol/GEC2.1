@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
  * @version v2.0.0
@@ -12648,7 +12648,7 @@ html[dir="rtl"] .aside-menu {
     width: 100%;
   }
   .header-fixed .app-body {
-    margin-top: 55px;
+    margin-top: 15px;
   }
   .sidebar-fixed .sidebar {
     position: fixed;

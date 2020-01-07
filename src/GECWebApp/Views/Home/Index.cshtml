@@ -32,7 +32,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateCOVE" class="text-value"></div>
-          <input max="35" min="10" step="1" class="form-control form-control-sm " type="number" style="width:50%" id="valueGainCO" value="3">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainCO" max="100" min="0" value="10">
         </div>
         <div id="rateCOVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -56,7 +56,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="ratePEVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainPE" max="8" min="1" step="0.5" value="4">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainPE" max="100" min="0" value="6">
         </div>
         <div id="ratePEVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -80,7 +80,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="ratePEUVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainPEU" max="20" min="1" step="1" value="13">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainPEU" max="100" min="0" value="6">
         </div>
         <div id="ratePEUVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -105,7 +105,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateDOVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainDO" max="0.99" min="0.1" step="0.05" value="0.65">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainDO" max="100" min="0" value="6">
         </div>
         <div id="rateDOVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -130,7 +130,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateCLVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainCL" max="0.1" min="0.01" step="0.01" value="0.02">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainCL" max="100" min="0" value="6">
         </div>
         <div>Tasa cambio</div>
         <div id="rateCLVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
@@ -155,38 +155,13 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateMXVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainMX" max="2.0" min="0.1" step="0.05" value="1.4">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainMX" max="100" min="0" value="6">
         </div>
         <div id="rateMXVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
         </div>
         <div>Tasa cambio</div>
         <div id="rateMXVEG" class="text-value"></div>
-
-      </div>
-    </div>
-  </div>
-  <!--/.col-->
-  <div class="col-sm-4 col-lg-3">
-    <div class="card text-white bg-info">
-      <div class="card-body pb-0">
-        <button id="refreshPA" onclick="exchangeRates.showCountryRate('PA', 'transfers-with-specific-bank', 'PAB', $('#valueGainPA').val(), 'ratePAVE')" type="button" class="btn btn-transparent p-0 float-right">
-          <i class="fa fa-refresh fa-lg"></i>
-        </button>
-        <div class="text-value">Panama</div>
-        <div class="text-center">
-          <i class="flag-icon flag-icon-pa h1" title="pa" id="pa"></i>
-        </div>
-        <div class="rate-gain">
-          <div>Tasa </div>
-          <div id="ratePAVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainPA" max="18.0" min="1.0" step="1.0" value="14.0">
-        </div>
-        <div id="ratePAVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
-        </div>
-        <div>Tasa cambio</div>
-        <div id="ratePAVEG" class="text-value"></div>
 
       </div>
     </div>
@@ -205,7 +180,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateECVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainEC" max="10.0" min="1" step="1" value="20.0">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainEC" max="100" min="0" value="6">
         </div>
         <div id="rateECVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -230,7 +205,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateESVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainES" max="30.0" min="1.0" step="0.5" value="20.0">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainES" max="100" min="0" value="6">
         </div>
         <div id="rateESVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
@@ -255,7 +230,7 @@
         <div class="rate-gain">
           <div>Tasa </div>
           <div id="rateARVE" class="text-value"></div>
-          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainAR" max="5.0" min="0.1" step="0.1" value="0.9">
+          <input class="form-control form-control-sm " type="number" style="width:50%" id="valueGainAR" max="100" min="0" value="6">
         </div>
         <div id="rateARVELoader" class="progress" style="display:none;position: absolute;width: 75%;top: 50%;left: 10%;">
           <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 70%"></div>
